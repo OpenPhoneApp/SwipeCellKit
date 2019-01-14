@@ -242,6 +242,7 @@ class SwipeActionsView: UIView {
     func notifyExpansion(expanded: Bool) {
         guard let expandedButton = buttons.last else { return }
 
+        expandedButton.isSelected = expanded
         expansionDelegate?.actionButton(expandedButton, didChange: expanded, otherActionButtons: buttons.dropLast().reversed())
     }
     

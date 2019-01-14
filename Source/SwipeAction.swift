@@ -50,6 +50,11 @@ public class SwipeAction: NSObject {
     ///
     /// - note: If you do not specify a color, `textColor` is used.
     public var highlightedTextColor: UIColor?
+
+    /// The selected text color of the action button.
+    ///
+    /// - note: If you do not specify a color, `textColor` is used.
+    public var selectedTextColor: UIColor?
     
     /// The image used for the action button.
     ///
@@ -60,6 +65,11 @@ public class SwipeAction: NSObject {
     ///
     /// - note: If you do not specify a highlight image, the default `image` is used for the highlighted state.
     public var highlightedImage: UIImage?
+
+    /// The selected image used for the action button is expanded.
+    ///
+    /// - note: If you do not specify a selected image, the default `image` is used for the selected state.
+    public var selectedImage: UIImage?
     
     /// The closure to execute when the user taps the button associated with this action.
     public var handler: ((SwipeAction, IndexPath) -> Void)?
